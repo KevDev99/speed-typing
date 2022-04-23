@@ -20,7 +20,7 @@ let gameState: GameState = "open";
 
 const init = async () => {
   const res = await fetch(
-    "http://hipsum.co/api/?type=hipster-centric&sentences=3"
+    "https://hipsum.co/api/?type=hipster-centric&sentences=3"
   );
   const res_body: [string] = await res.json();
 
